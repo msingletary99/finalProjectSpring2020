@@ -1,3 +1,5 @@
+package BusinessLayer;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -20,7 +22,12 @@ public class Product {
         quantityOnHand=0;
         price=0.0;
     }
-
+ public Product(int pID, String pDescription, int pQuantityOnHand, double pPrice){
+        productID=pID;
+        description=pDescription;
+        quantityOnHand=pQuantityOnHand;
+        price=pPrice;
+    }
     public int getProductID() {
         return productID;
     }

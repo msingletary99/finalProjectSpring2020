@@ -1,3 +1,5 @@
+package BusinessLayer;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -24,6 +26,16 @@ public class OrderItem {
         productDescription = " ";
         quantity = 0;
         price = 0.0;
+
+    }
+      public OrderItem(int oiOrderNumber, int oiLineNumber, int oiProductID,
+              String oiProductDescription, int oiQuantity, double oiPrice){
+        orderNumber = oiOrderNumber;
+        lineNumber = oiLineNumber;
+        productID = oiProductID;
+        productDescription = oiProductDescription;
+        quantity = oiQuantity;
+        price = oiPrice;
 
     }
 

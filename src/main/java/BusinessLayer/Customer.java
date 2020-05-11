@@ -1,3 +1,5 @@
+package BusinessLayer;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -20,6 +22,13 @@ public class Customer {
         firstName = " ";
         lastName = " ";
         phoneNumber = " ";
+    }
+    
+    public Customer(int userID, String first, String last, String phone){
+        customerID = userID;
+        firstName = first;
+        lastName = last;
+        phoneNumber = phone;
     }
 
     public int getCustomerID() {
